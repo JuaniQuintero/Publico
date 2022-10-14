@@ -1,14 +1,105 @@
 <!DOCTYPE html>
+<!-- Autor: Juan Ignacio quintero 
+	Fecha: 14 de Octubre 
+	Sistema: Primera Clase de 1Dam -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea: el CV</title>
-    <style></style>
+    <style>
+        *{
+            background-color: antiquewhite;
+        }
+        h1{
+            text-align: center;
+            color: red;
+        }
+        h2{
+            text-align: center;
+        }
+        #prueba{
+            display: inline-block;
+            margin-right: 3px;
+        }
+        .hola{
+            width: 32%;
+            padding: 2%;
+            margin-right: 10px;
+            margin-left: 10px;
+            display: flex;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        span{
+            text-decoration: underline 2px;
+        }
+    </style>
 </head>
 <body>
     <h1>Mi CV</h1>
     <h2>Mostrando elementos y estilos varios</h2>
+    <hr/>
+
+
+    <div id="prueba"class="hola">
+        <h3 id="prueba">Nombre:</h3><p id="prueba"> Juan Ignacio Quintero</p>
+    </div>
+
+    <div id="prueba" class="hola">
+        <h3 id="prueba">Nacionalidad:</h3><p id="prueba">Argentina</p>
+    </div>
+
+    <div id="prueba" class="hola">
+        <h3 id="prueba">País residencia: </h3><p id="prueba">España</p>
+    </div>
+    <hr/>
+
+    <div>
+        <h3>Datos Personales</h3>
+        <h4 id="prueba">Número de télefono:</h4>
+        <p id="prueba">640712715</p>
+        <br/>
+        <h4 id="prueba">Email:</h4>
+        <p id="prueba">quinterojuanignacio@gmail.com</p>
+        <br/>
+        <h4 id="prueba">Dirección:</h4>
+        <p id="prueba">Aneto 4, Benalmadena</p>
+        <br/>
+        <h4 id="prueba">Código postal:</h4>
+        <p id="prueba">29631</p>
+    </div>
+    <hr/>
+
+    <div>
+        <h3><span>Estudios:</span></h3>
+        <ul>
+            <li>Educación primaria (finalizada)</li>
+            <li>Educación secundaria (finalizada)</li>
+            <li>Bachillerato (finalizado)</li>
+            <li>Grado superior en desarrollo de aplicaciones multiplataformas (cenec)</li>
+        </ul>
+    </div>
+    <hr/>
+
+    <div>
+        <h3><mark>Idiomas</mark></h3>
+        <ol>
+            <li>Castellano: Nativo</li>
+            <li>Inglés: B2</li>
+        </ol>
+    </div>
+    <hr/>
+
+    <div>
+        <h3>Sobre mí</h3>
+    </div>
+
+    <div>
+        <h3>Experiencia laboral</h3>
+    </div>
+
+    <footer> </footer>
 </body>
 </html>
