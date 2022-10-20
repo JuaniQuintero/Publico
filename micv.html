@@ -8,6 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea: el CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree&display=swap" rel="stylesheet">
     <style>
         *{
             background-color: antiquewhite;
@@ -16,12 +21,21 @@
             text-align: center;
             color: red;
             text-decoration: underline 3px;  
+            font-family: 'Libre Baskerville', serif;
         }
         h2{
             text-align: center;
-           
+            font-family: 'Cairo', sans-serif;
         }
-        
+        h3{
+            font-family: 'Signika Negative', sans-serif;
+        }
+        h4, h5{
+            font-family: 'Figtree', sans-serif;
+        }
+        p{
+            font-family: 'Exo 2', sans-serif;
+        }
         #fondo{
             background-color: beige;
         }
@@ -49,6 +63,7 @@
         }
         mark{
             color:darkgreen;
+            text-decoration: underline overline darkgreen 2px;
         }
         header{
             border-style: dashed;
@@ -60,7 +75,11 @@
             box-sizing: border-box
         }
         footer{
-            margin-top:3%;
+            margin-top:2%;
+        }
+        #prueba{
+            display: block;
+            text-decoration: underline dashed lightcoral 2px;
         }
         
     </style>
@@ -109,9 +128,9 @@
         <div>
             <h3><span>Estudios:</span></h3>
             <ul>
-                <li>Educación primaria (finalizada)</li>
-                <li>Educación secundaria (finalizada)</li>
-                <li>Bachillerato (finalizado)</li>
+                <li>Educación primaria (finalizada 2015)</li>
+                <li>Educación secundaria (finalizada 2018)</li>
+                <li>Bachillerato (finalizado 2021)</li>
                 <li>Grado superior en desarrollo de aplicaciones multiplataformas (cenec)</li>
             </ul>
         </div>
@@ -132,7 +151,7 @@
     <section>
         <div>
             <h3><span>Habilidades</span></h3>
-            <p>Resolución de problemas, responsabilidad, puntualidad, organización.</p>
+            <p><span id="prueba">Resolución de problemas</span> <span id="prueba">Responsabilidad</span> <span id="prueba">Puntualidad</span> <span id="prueba">Organización</span></p>
         </div>
     </section>
     <hr/>
@@ -146,7 +165,7 @@
     <hr/>
 
     <footer>
-        <h5>Ultima actualización: 19/10/2022</h5>
+        <h5>Ultima actualización: 20/10/2022</h5>
     </footer>
 </body>
 </html>
