@@ -1,0 +1,94 @@
+* {
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    text-decoration: underline 3px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+}
+
+h3 {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+h4,
+h5 {
+    font-family: 'Figtree', sans-serif;
+}
+
+p {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.fondo{
+    background-color: beige;
+}
+
+#subir {
+    display: inline-block;
+    margin-right: 3px;
+
+}
+
+.ajustar {
+    width: 32%;
+    max-height: 150px;
+    min-height: 150px;
+    padding-top: 3%;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    border-style: solid;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.mover{
+    display:flex;
+    justify-content: space-between;
+}
+.juego{
+    display: flex;
+    justify-content: space-around;
+}
+.a{
+    width: 33%;
+    border-right-style:solid ;
+    border-color:rgb(253, 221, 160);
+}
+.b{
+    width: 28%;
+}
+span {
+    text-decoration: underline 2px;
+}
+
+mark {
+    color: darkgreen;
+    text-decoration: underline overline darkgreen 2px;
+}
+
+header {
+    border-style: dashed;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-color: goldenrod;
+    background-color: beige;
+    box-sizing: border-box
+}
+
+footer {
+    margin-top: 2%;
+}
+
+#prueba {
+    display: block;
+    text-decoration: underline dashed lightskyblue 2px;
+}
