@@ -66,6 +66,32 @@ h1::after{
     border-bottom: 20px solid transparent;
     right: 50%;
 }
+p,h2{
+    margin: 1%;
+}
+.mover{
+    padding: 1%;
+    display:flex;
+    justify-content: space-between;
+}
+.subir {
+    display: inline-block;
+    margin-right: 3px;
+
+}
+.ajustar {
+    width: 15%;
+    max-height: 150px;
+    min-height: 150px;
+    padding-top: 3%;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    border-style: solid;
+    border-radius: 25px;
+    overflow: hidden;
+    padding-left: 4vw;
+}
 
 
 @media screen and (max-width:1200px){
@@ -90,12 +116,14 @@ h1::after{
     h1,h2{
         text-align: center;
     }
+    h2{
+        margin: 0%;
+    }
 }
 
 
 
-
-@media screen and (max-width:500px) and (orientation:portrait){
+@media screen and (max-width:500px){
     body{
         background-color: grey;
         color: white;
@@ -118,5 +146,16 @@ h1::after{
     a{
         background-color:rgb(168, 158, 145);
     }
-
+    #cajita{
+        display: flex;
+        justify-content: space-between;
+        margin: 1%;
+        text-align: center;
+    }
+    h1,h2{
+        text-align: center;
+    }
+    h2{
+        margin: 0%;
+    }
 }
