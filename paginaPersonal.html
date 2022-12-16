@@ -15,7 +15,58 @@
 <body>
   
   <article>
-    <img src="./images/libros-banner.png" alt="Libros" width="100%">
+    <div id="caja">
+      <picture class="portaFoto">
+          <!--Fotos grandes horizontal-->
+          <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./images/libros-banner.avif"
+              type="image/avif" width="100%">
+          <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./images/libros-banner.webp"
+              type="image/webp">
+          <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./images/libros-banner.jpg"
+              type="image/jpeg">
+          <!--Fotos grandes vertical-->
+          <source media="(orientation: portrait) and (min-width:601px)" srcset="./images/libros-banner-vertical.avif"
+              type="image/avif">
+          <source media="(orientation: portrait) and (min-width:601px)" srcset="./images/libros-banner-vertical.webp"
+              type="image/webp">
+          <source media="(orientation: portrait) and (min-width:601px)" srcset="./images/libros-banner-vertical.jpg"
+              type="image/jpg">
+          <!--Fotos medianas horizontal-->
+          <source media="(orientation: landscape) and (min-width: 901px)" srcset="./images/libros-banner-mediano.avif"
+              type="image/avif">
+          <source media="(orientation: landscape) and (min-width: 901px)" srcset="./images/libros-banner-mediano.webp"
+              type="image/webp">
+          <source media="(orientation: landscape) and (min-width: 901px)" srcset="./images/libros-banner-mediano.jpg"
+              type="image/jpeg">
+          <!--Fotos medianas vertical-->
+          <source media="(orientation: portrait) and (min-width:401px)" srcset="./images/libros-banner-mediano-vertical.avif"
+              type="image/avif">
+          <source media="(orientation: portrait) and (min-width:401px)" srcset="./images/libros-banner-mediano-vertical.webp"
+              type="image/webp">
+          <source media="(orientation: portrait) and (min-width:401px)" srcset="./images/libros-banner-mediano-vertical.jpg"
+              type="image/jpg">
+          <!--Fotos pequeñas horizontal-->
+          <source media="(orientation: landscape) and (max-width: 900px)" srcset="./images/libros-banner-pequeño.avif"
+              type="image/avif">
+          <source media="(orientation: landscape) and (max-width: 900px)" srcset="./images/libros-banner-pequeño.webp"
+              type="image/webp">
+          <source media="(orientation: landscape) and (max-width: 900px)" srcset="./images/libros-banner-pequeño.jpg"
+              type="image/jpeg">
+          <!--Fotos pequeñas vertical-->
+          <source media="(orientation: portrait) and (max-width: 400px)" srcset="./images/libros-banner-pequeño-vertical.avif"
+              type="image/avif">
+          <source media="(orientation: portrait) and (max-width: 400px)" srcset="./images/libros-banner-pequeño-vertical.webp"
+              type="image/webp" width="100%">
+          <source media="(orientation: portrait) and (max-width: 400px)" srcset="./images/libros-banner-pequeño-vertical.jpg" type="image/jpg" width="100%">
+
+          <img class="laFoto" alt="Foto de un Gato" title="Un paisaje conocido" src="./images/libros-banner.png" width="100%" />
+      </picture>
+  </div>
+
+
+
+
+    
   </article>
   <nav>
    
