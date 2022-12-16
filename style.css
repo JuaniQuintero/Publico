@@ -8,3 +8,13 @@ body{
 h1{
     text-align: center;
 }
+#cajita{
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+}
+h1:hover,h3:hover{
+    background-color: black;
+    color: antiquewhite;
+    font-style: italic;
+}
