@@ -7,14 +7,155 @@ body{
 }
 h1{
     text-align: center;
+    position: relative;
+    background-color: black;
+    color: white;
 }
 #cajita{
     display: flex;
     justify-content: space-between;
     margin: 1%;
 }
-h1:hover,h3:hover{
+h1:hover,h2:hover{
     background-color: black;
     color: antiquewhite;
     font-style: italic;
+}
+a{
+    margin: 0.5em 2%;
+    height: 1.5em;
+    width: 10%;
+    font-size: xx-large;
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 5px black;   
+    text-align: center; 
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0.4em;
+    color:whitesmoke;
+    text-shadow: 2px 2px black;
+    padding-top: 0.2em;
+    overflow: hidden;
+}
+a:hover{
+    background-color: rgb(134, 121, 103);
+}
+a:visited{
+    color: whitesmoke;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color:  rgb(236, 224, 183);
+    overflow: hidden;
+}
+#activo {
+    box-shadow: 5px 5px 5px black inset;
+    background-color: lightgray;
+}
+p::selection,h1::selection,h2::selection{
+    background-color: red;
+}
+h1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 20px solid black;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    right: 50%;
+}
+p,h2{
+    margin: 1%;
+}
+.mover{
+    padding: 1%;
+    display:flex;
+    justify-content: space-between;
+}
+.subir {
+    display: inline-block;
+    margin-right: 3px;
+
+}
+.ajustar {
+    width: 15%;
+    max-height: 150px;
+    min-height: 150px;
+    padding-top: 3%;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    border-style: solid;
+    border-radius: 25px;
+    overflow: hidden;
+    padding-left: 4vw;
+}
+
+
+@media screen and (max-width:1200px){
+    body{
+        background-color: rgb(175, 146, 108);
+        color: black;
+    }
+    h1:hover,h2:hover{
+        background-color: black;
+        color: antiquewhite;
+        font-style: italic;
+    }
+    .justificado{
+        text-align: justify;
+    }
+    nav{
+        background-color: rgb(66, 66, 66);
+    }
+    a{
+        background-color:rgb(168, 158, 145);
+    }
+    h1,h2{
+        text-align: center;
+    }
+    h2{
+        margin: 0%;
+    }
+}
+
+
+
+@media screen and (max-width:500px){
+    body{
+        background-color: grey;
+        color: white;
+    }
+    h1:hover{
+        color: antiquewhite;
+        font-style: italic;
+    }
+    h2:hover{
+        background-color: antiquewhite;
+        color: black;
+        font-style: italic;
+    }
+    .justificado{
+        text-align: justify;
+    }
+    nav{
+        background-color: rgb(66, 66, 66);
+    }
+    a{
+        background-color:rgb(168, 158, 145);
+    }
+    #cajita{
+        display: flex;
+        justify-content: space-between;
+        margin: 1%;
+        text-align: center;
+    }
+    h1,h2{
+        text-align: center;
+    }
+    h2{
+        margin: 0%;
+    }
 }
