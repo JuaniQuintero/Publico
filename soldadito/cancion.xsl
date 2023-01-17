@@ -6,6 +6,7 @@
 			<body>
 				<h2>Canción:</h2>
 				<h1><xsl:value-of select="cancion/titulo"/></h1>
+				<p>(Autor: <xsl:value-of select="cancion/texto/informacion/autor"/></p>
 			</body>
 		</html>
 	</xsl:template>
