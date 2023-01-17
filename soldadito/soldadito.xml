@@ -7,6 +7,7 @@
             <autor>Fito y Los Fitipaldis</autor>
         </informacion>
         <estrofa tipo="normal">
+            <orden>5</orden>
             <verso>Él camina despacito que las prisas no son buenas</verso>
             <verso>En su brazo dobladita, con cuidado la chaqueta</verso>
             <verso>Luego pasa por la calle dónde los chavales juegan</verso>
@@ -16,6 +17,7 @@
 
     <texto>
         <estrofa tipo="estribillo">
+            <orden>4</orden>
             <verso>Soldadito marinero conociste a una sirena</verso>
             <verso>De esas que dicen te quiero si ven la cartera llena</verso>
             <verso>Escogiste a la más guapa y a la menos buena</verso>
@@ -25,6 +27,7 @@
 
     <texto>
         <estrofa tipo="normal">
+            <orden>3</orden>
             <verso>Él quería cruzar los mares y olvidar a su sirena</verso>
             <verso>La verdad, no fue difícil cuando conoció a Mariela</verso>
             <verso>Que tenía los ojos verdes y un negocio entre las piernas</verso>
@@ -34,6 +37,7 @@
 
     <texto>
         <estrofa tipo="estribillo">
+            <orden>2</orden>
             <verso>Soldadito marinero conociste a una sirena</verso>
             <verso>De esas que dicen te quiero si ven la cartera llena</verso>
             <verso>Escogiste la más guapa y a la menos buena</verso>
@@ -43,6 +47,7 @@
 
     <texto>
         <estrofa tipo="normal">
+            <orden>1</orden>
             <verso>Después de un invierno malo, una mala primavera</verso>
             <verso>Dime por que estas buscando una lágrima en la arena</verso>
             <verso>Después de un invierno malo</verso>
