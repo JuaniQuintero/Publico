@@ -12,10 +12,10 @@
 				<xsl:for-each select="cancion/texto/estrofa">
 					<xsl:sort select="orden"/>
 					<xsl:if test="tipo = 'estribillo'">
-						ESTRIBILLO:
+						<h4><span>ESTRIBILLO:</span></h4>
 					</xsl:if>
 					<xsl:for-each select="verso">
-						<p><xsl:value-of select="."/></p>
+						<p class="verso"><xsl:value-of select="."/></p>
 					</xsl:for-each>
 					<br/>
 				</xsl:for-each>
