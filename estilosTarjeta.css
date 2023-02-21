@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: 60% 10%;
+    opacity: 1;
+    z-index: 0;
+    transition: all 2s ease-in;
+    -webkit-transition: all 2s ease-in;
+    background-color: transparent;
+}
+
+div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    opacity: 0;
+    transition: all 2s ease-in;
+    -webkit-transition: all 2s ease-in;
+    background-color: transparent;
+}
+p {
+    text-align: center;
+    color: rgb(118, 255, 248);
+    text-shadow: 2.4px -1.5px rgb(148, 41, 175);
+    font-size: calc(1.5em + 1vw + 1vh);
+    z-index: 2;
+    transition: all 2s ease-in;
+    -webkit-transition: all 2s ease-in;
+    background-color: transparent;
+    font-weight:bold;
+}
+
+div:hover,
+img:hover {
+    opacity: 1;
+    background-color: rgba(53, 85, 100, 0.212);
+    animation: colores 3s;
+}
+@keyframes colores {
+    50% {background-color: rgba(255, 255, 0, 0.082);}
+    75% {background-color: rgba(0, 128, 0, 0.164);}
+    100% {background-color: transparent;}
+}
+p:nth-child(2) {
+    color: rgb(240, 240, 240);
+    font-style: italic;
+}
+
+@media (orientation: landscape) {
+    img,
+    div {
+        width: 70vh;
+        margin-left: calc(50vw - 35vh);
+    }
+}
