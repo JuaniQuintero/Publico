@@ -1,0 +1,125 @@
+/*Autor: Juan Ignacio Quintero
+  Fecha: 21/02/2023
+  Curso: 1°Dam*/
+@-webkit-keyframes example {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes example {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.modal:target {
+  display: table;
+  position: absolute;
+}
+
+.modal-dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-dialog .modal-content {
+  margin: auto;
+  background-color: #f3f3f3;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  border: 1px #777 solid;
+  text-align: justify;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 0.5s;
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+
+.cerrar {
+  text-decoration: none;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(255, 205, 205);
+}
+
+.cerrar:hover,
+.cerrar:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  padding: 2px 16px;
+  text-align: center;
+  background-color: #f866fd;
+  font-size: 25px;
+  color: white;
+}
+
+button {
+  border: 0;
+  background-image: linear-gradient(150deg, #9500ff, #09f, #00ddff);
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+span {
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+button:hover span {
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.cajaBoton {
+  display: flex;
+  justify-content: center;
+}
